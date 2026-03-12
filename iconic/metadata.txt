@@ -8,11 +8,12 @@ about=Iconic is a QGIS-plugin for SVG-based iconpackages. The plugin lets you in
 category=Vector
 author=Tom-Erik Bakkely Aasheim
 email=mail@geocell.no
-homepage=https://geocell.no/
+homepage=https://geocell.no/qgis-plugins
 repository=https://github.com/geocellnorway/iconic
 tracker=https://github.com/geocellnorway/iconic/issues
 icon=icon_iconic.svg
 tags=svg,icons,symbols,point,dock,packages,qt6
 supportsQt6=True
 experimental=False
+
 deprecated=False
