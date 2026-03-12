@@ -2,6 +2,12 @@
 
 Alle vesentlige endringer i dette prosjektet dokumenteres her.
 
+## [1.1.1] - 2026-03-12
+
+### Changed
+
+- Changed homepage in metadata.txt
+
 ## [1.0.0] - 2026-03-11
 
 ### Added
