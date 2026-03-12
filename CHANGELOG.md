@@ -1,6 +1,6 @@
 # Changelog
 
-Alle vesentlige endringer i dette prosjektet dokumenteres her.
+All notable changes to this project are documented here.
 
 ## [1.1.1] - 2026-03-12
 
@@ -8,34 +8,42 @@ Alle vesentlige endringer i dette prosjektet dokumenteres her.
 
 - Changed homepage in metadata.txt
 
+## [1.1.0] - 2026-03-11
+
+### Changed
+
+- Replaced the remote package manifest format from XML to JSON.
+- Removed XML parsing from the plugin package feed workflow.
+- Simplified package feed handling and removed Bandit XML parser warnings.
+
 ## [1.0.0] - 2026-03-11
 
 ### Added
 
-- Støtte for installasjon, oppdatering og avinstallering av SVG-baserte ikonpakker
-- Dock-panel for søk, filtrering og valg av ikoner
-- Filtrering etter ikonpakke og kategori
-- Støtte for ikonvarianter fra pakkedefinisjoner
-- Oppdateringssjekk for tilgjengelige ikonpakker
-- Styling av eksisterende punktlag med SVG-felter og kategorisert renderer
-- Plassering av nye punktobjekter med valgt SVG-ikon
+- Support for installing, updating, and uninstalling SVG-based icon packages
+- Dock panel for searching, filtering, and selecting icons
+- Filtering by icon package and category
+- Support for icon variants from package definitions
+- Update checking for available icon packages
+- Styling of existing point layers using SVG fields and a categorized renderer
+- Placement of new point features using the selected SVG icon
 
 ### Fixed
 
-- Fikset kompatibilitet med QGIS 4 / Qt6
-- Fikset `QNetworkRequest`-kompatibilitet i Qt6
-- Fikset `QStandardPaths`-kompatibilitet i Qt6
-- Fikset `QDockWidget`-relaterte enum-endringer i Qt6
-- Fikset `QListWidget`, `QTableWidget`, `QHeaderView` og andre widget-enums i Qt6
-- Fikset `QEventLoop.exec()` / `exec_()`-kompatibilitet
-- Fikset `QMessageBox`-knapper i Qt6
-- Fikset `QPainter`-render hints og farge-enums i Qt6
-- Fikset `QSizePolicy`-enums i Qt6
-- Fikset håndtering av nettverksrespons i QGIS 4 ved henting av pakkeliste
-- Fikset reinstallasjon av ikonpakker slik at gamle filer ikke blir liggende igjen
-- Forbedret stabilitet ved unload / reload av plugin
+- Fixed compatibility with QGIS 4 / Qt6
+- Fixed `QNetworkRequest` compatibility in Qt6
+- Fixed `QStandardPaths` compatibility in Qt6
+- Fixed `QDockWidget`-related enum changes in Qt6
+- Fixed `QListWidget`, `QTableWidget`, `QHeaderView`, and other widget enums in Qt6
+- Fixed `QEventLoop.exec()` / `exec_()` compatibility
+- Fixed `QMessageBox` buttons in Qt6
+- Fixed `QPainter` render hints and color enums in Qt6
+- Fixed `QSizePolicy` enums in Qt6
+- Fixed network response handling in QGIS 4 when fetching the package list
+- Fixed icon package reinstallation so old files are properly removed
+- Improved plugin stability during unload / reload
 
 ### Changed
 
-- Pluginen er nå SVG-basert og bruker ikonpakker i stedet for lokal Font Awesome OTF-basert arbeidsflyt
-- Metadata, beskrivelse og funksjonsomfang er oppdatert til å reflektere dagens funksjonalitet
+- The plugin is now SVG-based and uses icon packages instead of a local Font Awesome OTF-based workflow
+- Metadata, description, and documented functionality were updated to reflect the current implementation
