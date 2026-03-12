@@ -1,53 +1,53 @@
 # Iconic
 
-Iconic er et QGIS-plugin for å jobbe med SVG-baserte ikonpakker i punktlag.
+Iconic is a QGIS plugin for working with SVG-based icon packages in point layers.
 
-Pluginen gir deg et eget dock-panel i QGIS der du kan:
+The plugin adds its own dock panel in QGIS where you can:
 
-- installere, oppdatere og avinstallere ikonpakker
-- søke og filtrere ikoner etter pakke og kategori
-- forhåndsvise tilgjengelige SVG-ikoner
-- plassere nye punktobjekter i kartet med valgt ikon
-- style eksisterende punktlag med SVG-ikoner
-- bruke ikoninformasjon lagret i felt på laget
+- install, update, and uninstall icon packages
+- search and filter icons by package and category
+- preview available SVG icons
+- place new point features in the map using the selected icon
+- style existing point layers with SVG icons
+- use icon information stored in layer fields
 
-## Funksjoner
+## Features
 
-### Ikonpakker
+### Icon packages
 
-Iconic henter en pakkeliste fra en ekstern `packages.xml` og lar deg installere ikonpakker direkte fra pluginen. Hver pakke kan inneholde:
+Iconic fetches a package list from an external `packages.json` file and lets you install icon packages directly from the plugin. Each package can contain:
 
-- SVG-filer
-- tilhørende JSON-fil med navn, beskrivelser, kategorier og varianter
+- SVG files
+- a related JSON file with names, descriptions, categories, and variants
 
-Pluginen støtter også oppdateringssjekk mot tilgjengelige pakkeversjoner.
+The plugin also supports update checks for available package versions.
 
-### Ikonvalg
+### Icon selection
 
-I dock-panelet kan du:
+In the dock panel, you can:
 
-- søke etter ikonnavn eller beskrivelse
-- filtrere på ikonpakke
-- filtrere på kategori
-- velge variant der dette finnes
-- angi symbolstørrelse i mm
+- search by icon name or description
+- filter by icon package
+- filter by category
+- choose a variant where available
+- define symbol size in mm
 
-### Plassering av nye punkt
+### Placing new points
 
-Når du velger **Plassér nye punkter ved klikk i kartet**, kan du klikke direkte i kartflaten og opprette nye punktobjekter med valgt SVG-ikon.
+When you choose **Place new points by clicking in the map**, you can click directly in the map canvas and create new point features using the selected SVG icon.
 
-### Styling av eksisterende punktlag
+### Styling existing point layers
 
-Når du velger **Style eksisterende lag**, kan pluginen:
+When you choose **Style existing layer**, the plugin can:
 
-- opprette nødvendige felt dersom de mangler
-- lagre SVG-informasjon i laget
-- bruke kategorisert renderer på `svg_path`
-- overskrive eksisterende ikonverdier dersom ønskelig
+- create required fields if they are missing
+- store SVG information in the layer
+- use a categorized renderer based on `svg_path`
+- overwrite existing icon values if desired
 
-## Felt som brukes
+## Fields used
 
-Pluginen bruker disse feltene i punktlaget:
+The plugin uses the following fields in the point layer:
 
 - `icon_source`
 - `svg_name`
@@ -57,35 +57,35 @@ Pluginen bruker disse feltene i punktlaget:
 - `svg_category`
 - `svg_pack`
 
-Disse brukes til å lagre informasjon om hvilket ikon som er valgt, hvor SVG-filen ligger, størrelse og eventuell variant.
+These fields are used to store information about the selected icon, the location of the SVG file, the symbol size, and any selected variant.
 
-## Krav
+## Requirements
 
-- QGIS 3.34 eller nyere
-- Støtter også QGIS 4 / Qt6
+- QGIS 3.34 or newer
+- Also supports QGIS 4 / Qt6
 
-## Installasjon
+## Installation
 
-1. Installer pluginen i QGIS
-2. Åpne **Iconic** fra meny eller verktøylinje
-3. Åpne **Ikonpakker**
-4. Installer ønsket pakke
-5. Velg ikon og bruk pluginen til plassering eller styling
+1. Install the plugin in QGIS
+2. Open **Iconic** from the menu or toolbar
+3. Open **Icon Packages**
+4. Install the desired package
+5. Select an icon and use the plugin to place or style features
 
-## Ikonpakker
+## Icon packages
 
-Pluginen forventer en pakkeliste i XML-format med lenker til:
+The plugin expects a package list in JSON format with links to:
 
-- ZIP med SVG-filer
-- JSON med ikonmetadata
+- a ZIP archive containing SVG files
+- a JSON file containing icon metadata
 
-Pakker installeres lokalt i QGIS sin AppData-mappe.
+Packages are installed locally in the QGIS AppData folder.
 
 ## Status
 
-Pluginen er under aktiv utvikling. Fokus har vært på stabil støtte for både QGIS 3 og QGIS 4, inkludert Qt6-kompatibilitet.
+The plugin is under active development. The main focus so far has been stable support for both QGIS 3 and QGIS 4, including Qt6 compatibility.
 
-## Forfatter
+## Author
 
 Tom-Erik Bakkely Aasheim  
 Geocell  
